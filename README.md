@@ -13,8 +13,6 @@ Para instalar e executar a API, você precisará ter instalado em seu computador
 
 Depois de instalar as dependências, faça o download do projeto e execute o seguinte comando no terminal:
 
-Copy code
-
 `gradle bootRun` 
 
 A API estará disponível em [http://localhost:8080](http://localhost:8080/).
@@ -135,7 +133,7 @@ A API estará disponível em [http://localhost:8080](http://localhost:8080/).
       "duracao": 1
     }
     ```
-- `DELETE /atua/projeto/{idProjeto}/engenheiro/{idEngenheiro}` 
+- `DELETE /atuacao/{id}` 
   - Remove um engenheiro de um projeto.
 
 ## 🤝 Contribuição
