@@ -6,9 +6,9 @@ import jakarta.persistence.*
 
 @Entity(name = "projetos")
 class Projeto(
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY) var id: Long?,
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY) val id: Long?,
     var nome: String,
-    var custo: Double,
+    val custo: Double,
     @Enumerated(value = EnumType.STRING) var categoria: Categoria
 ) {
     constructor(dto: ProjetoRequest) : this(null, dto.nome, dto.custo, dto.categoria)
