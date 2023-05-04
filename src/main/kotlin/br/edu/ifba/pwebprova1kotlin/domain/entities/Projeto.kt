@@ -1,6 +1,6 @@
 package br.edu.ifba.pwebprova1kotlin.domain.entities
 
-import br.edu.ifba.pwebprova1kotlin.domain.dtos.ProjetoRequest
+import br.edu.ifba.pwebprova1kotlin.domain.dtos.request.ProjetoRequest
 import br.edu.ifba.pwebprova1kotlin.domain.enums.Categoria
 import jakarta.persistence.*
 

@@ -1,7 +1,7 @@
 package br.edu.ifba.pwebprova1kotlin.service
 
-import br.edu.ifba.pwebprova1kotlin.domain.dtos.ProjetoRequest
-import br.edu.ifba.pwebprova1kotlin.domain.dtos.ProjetoResponse
+import br.edu.ifba.pwebprova1kotlin.domain.dtos.request.ProjetoRequest
+import br.edu.ifba.pwebprova1kotlin.domain.dtos.response.ProjetoResponse
 import br.edu.ifba.pwebprova1kotlin.domain.entities.Projeto
 import br.edu.ifba.pwebprova1kotlin.repository.ProjetoRepository
 import org.springframework.beans.factory.annotation.Autowired

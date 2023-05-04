@@ -1,4 +1,4 @@
-package br.edu.ifba.pwebprova1kotlin.domain.dtos
+package br.edu.ifba.pwebprova1kotlin.domain.dtos.request
 
 import br.edu.ifba.pwebprova1kotlin.domain.enums.Especialidade
 

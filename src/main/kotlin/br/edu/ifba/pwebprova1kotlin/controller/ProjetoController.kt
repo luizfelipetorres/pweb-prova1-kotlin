@@ -1,7 +1,7 @@
 package br.edu.ifba.pwebprova1kotlin.controller
 
-import br.edu.ifba.pwebprova1kotlin.domain.dtos.ProjetoRequest
-import br.edu.ifba.pwebprova1kotlin.domain.dtos.ProjetoResponse
+import br.edu.ifba.pwebprova1kotlin.domain.dtos.request.ProjetoRequest
+import br.edu.ifba.pwebprova1kotlin.domain.dtos.response.ProjetoResponse
 import br.edu.ifba.pwebprova1kotlin.service.ProjetoService
 import jakarta.validation.Valid
 import org.springframework.beans.factory.annotation.Autowired
@@ -15,7 +15,7 @@ class ProjetoController(@Autowired val service: ProjetoService) {
 
     @PostMapping
     fun cadastrar(
-        @RequestBody @Valid dto: ProjetoRequest, builder: UriComponentsBuilder
+            @RequestBody @Valid dto: ProjetoRequest, builder: UriComponentsBuilder
     ): ResponseEntity<ProjetoResponse> = service.cadastrar(dto).let { response ->
         builder.path("/projeto/${response.id}").build().toUri().let { uri ->
             ResponseEntity.created(uri).body(response)
